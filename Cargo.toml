@@ -1,0 +1,16 @@
+[package]
+name = "node-bindgen-scratch"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+node-bindgen = { version = "5.1" }
+serde = "1.0.174"
+
+[build-dependencies]
+node-bindgen = { version = "5.1", features = ["build"] }
+
+[lib]
+crate-type = ["cdylib"]
